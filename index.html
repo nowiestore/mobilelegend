@@ -123,7 +123,7 @@
   function formatRupiah(num) {
     return 'Rp ' + parseInt(num).toLocaleString('id-ID');
   }
-  var STARLIGHT_IMG = '<img src="https://nowiestore.github.io/mobilelegend/Starlight.webp" alt="Starlight" style="height:100px;width:auto;object-fit:contain;vertical-align:middle;margin-right:100px;">';
+  var STARLIGHT_IMG = '<img src="https://nowiestore.github.io/mobilelegend/Starlight.webp" alt="Starlight" style="height:100px;width:auto;object-fit:contain;vertical-align:middle;margin-right:4px;">';
 
   var KATEGORI_INFO = {
     'diamond':   { label: '💎 Diamond ML' },
@@ -170,7 +170,7 @@
           '<div class="pkg-price">' + formatRupiah(pkg.harga) + '</div>' + WA_SVG;
       } else {
         var icons = { 'Weekly Elite': '🌙', 'Monthly Epic': '💫' };
-        var starlightImgCard = '<img src="https://nowiestore.github.io/mobilelegend/Starlight.webp" alt="" style="width:28px;height:auto;object-fit:contain;flex-shrink:0;">';
+        var starlightImgCard = '<img src="https://nowiestore.github.io/mobilelegend/Starlight.webp" alt="" style="width:100px;height:auto;object-fit:contain;flex-shrink:0;">';
         var iconHtml = kategori === 'starlight'
           ? starlightImgCard
           : (icons[pkg.paket] ? '<span class="special-icon">' + icons[pkg.paket] + '</span>' : '<span class="special-icon">🎮</span>');
